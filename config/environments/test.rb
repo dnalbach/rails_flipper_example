@@ -43,4 +43,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Not currently using memoization in sample app, revisit later
+  # https://github.com/jnunemaker/flipper/pull/523
+  config.flipper.memoize = false
 end

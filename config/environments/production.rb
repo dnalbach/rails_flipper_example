@@ -91,4 +91,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Not currently using memoization in sample app, revisit later
+  # https://github.com/jnunemaker/flipper/pull/523
+  config.flipper.memoize = false
 end
